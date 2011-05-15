@@ -1,0 +1,24 @@
+Hello and thanks for looking at my drag-n-drop (multiple) image upload jQuery plugin.
+
+It is a very basic plugin -more of a code example- and works best in chrome (it uses the progressbar element that is only supported in chrome and opera at the moment). I haven't tried it in any other browser but firefox and chrome on osx.
+
+It the first jQuery plugin I've written, but I followed the authoring guide in the documentation so it works pretty well. Uses functions from jQuery 1.5 so that is the minimum requirement. I developed it with version 1.6.1.
+
+If you want to use it directly:
+$([your-element].imgDrop() makes [your-element] a dropzone that uploads the images to upload.php. You can add as many as you like.
+
+it takes the following parameters:
+'url' 		: 'upload.php',
+'hoverClass'	: 'imgDropHover',
+'figureClass'	: 'imgDropFig',
+'progressClass'	: 'imgDropProg',
+'captionClass'	: 'imgDropCaption',
+'imageClass'	: 'imgDropImg',
+'fileTypes'	: Array('image/png','image/gif','image/jpeg')
+(left: parameter, right: default value)
+
+upload.php serves just as an example to get you going and is a very bad script. It does not check what it actually received and directly stores it, and overwrites if the file already exists.
+
+I hope this script can help you in your future coding endeavors.
+
+If you use it as a base for your own image uploading script I'd appreciate it if you mentioned somewhere in the sourcecode that it was base on this script by me, but no hard feelings if you don't.
